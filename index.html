@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="debit.css">
+    <title>Debit Note Case Study</title>
+</head>
+<body>
+<div class="menu-toggle-bar"></div> 
+<button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+     <nav class="side-nav">
+    <ul>
+        <li class="active">
+        <a href="debit.html">Debit Note</a>
+        <ul class="sub-nav">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#case-study">Case Study</a></li>
+      </ul>
+      </li>
+        <!-- <li><a href="hotelops.html">Hotel Ops</a></li>
+        <li><a href="murami.html">Murami</a></li>
+        <li><a href="esg.html">ESG/INT TRADE</a></li>
+        <li><a href="allpyth.html">Python/SQL Notebooks</a></li> -->
+        <!-- <li><a href="project4.html">Super Store</a></li> -->
+    </ul>
+</nav>
+
+
+<main>
+ 
+ <section id="overview" class="project-overview">
+  <h2>Vendor Debit Note Automation</h2>
+
+  <ul class="project-meta">
+    <li><strong>Category:</strong> Supply chain / operations</li>
+    <li><strong>Technical Skills:</strong> Excel modeling, HTML/CSS/JS, automation, PDF generation</li>
+  </ul>
+
+  <div class="project-description">
+    <p><strong>Overview:</strong> Developed a system to automatically generate debit notes for overcharged suppliers at <strong>Triple E Medical</strong>.</p>
+    <p><strong>Impact:</strong> Reduced reconciliation errors and delivered measurable financial impact, including revenue savings of <strong>over 20%</strong> and saving 120+ hours per month in procurement operations.</p>
+
+
+    <p class="disclaimer"><em>Disclaimer:</em> This project is a creative recreation of the actual system i built and is used at <strong>Triple E Medical</strong>. All names and data are used with permission and may be adapted for demonstration purposes.</p>
+  </div>
+
+  <div class="project-download">
+    <p><strong>Download Project File:</strong></p>
+    <a href="#" class="btn download-btn" id="download-excel">medequip.xlsx</a>
+  </div>
+
+
+    <video autoplay muted loop class="app-video">
+      <source src="./Videos/adeno.mp4" type="video/mp4">
+    </video>
+
+    <a href="https://medinote-rmi5.onrender.com" target="_blank" class="visit-btn">
+      Visit DebitNote Demo
+    </a>
+     <span class="demo-note"> (Please download the Excel file above first.)</span>
+  </section>
+
+
+
+<section id="case-study" class="project-case-study">
+    <div class="sticky-container">
+    <!-- Sticky text panel -->
+    <div class="sticky-explanation">
+      <h1 class="case-title">Project Case Study:</h1>
+      <h2 id="case-heading" class="fade show"></h2>
+      <p id="case-text" class="fade show"></p>
+    </div>
+
+
+    <div class="sticky-scroll">
+      <div class="scroll-item" data-heading="Problem"
+           data-text="Discrepancies between planned orders, received quantities, and invoiced amounts led to supplier overcharging, missed recoveries, and labor-intensive manual reconciliation. <br>
+            <span class='notice'>Objective:</span> Develop a system to automatically detect overcharging, calculate debit amounts, generate debit notes, and provide analytics on savings, leakage, and supplier performance.">
+        <img src="./Images/moneyleak.jpg" alt="Dataset discrepancies">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 1: Inventory Analysis"
+           data-text="Compares planned units (green), invoiced units, and received units.
+            Discrepancies where invoiced amounts exceed planned or received quantities are flagged in red.">
+        <img src="./Images/adatashot.png" alt="Dataset discrepancies">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 2: Analytics and Insights"
+           data-text="Total Leakage vs Total Savings: Overcharged amounts vs recovered amounts; savings exceed leakage.
+          Supplier Performance: Highlights habitual defaulters by comparing leakage vs savings per supplier.">
+        <img src="./Images/aaatotasup.png" alt="Leakage vs Savings">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 3: System Interface and Upload"
+           data-text="Web-based system (HTML, CSS, JS) allows Excel uploads.Automatically calculates debit amounts and organizes results by supplier and invoice.<br>
+           <span class='notice'>Impact:</span> Reduces manual effort, prevents errors, and centralizes debit calculations.">
+        <!-- <img src="./Images/adebi1.png" alt="App Homepage"> -->
+         <video autoplay muted loop class="appy-video">
+          <source src="./Videos/adebi01.mp4" type="video/mp4">
+         </video>
+      </div>
+
+      <div class="scroll-item" data-heading="Step 4: Automated Debit Note Generation"
+           data-text="Generates debit notes automatically, including overcharge amounts, supplier details, and invoice references.
+          Supports PDF export for professional documentation.">
+        <img src="./Images/adebi3.png" alt="Dataset Upload">
+      </div>
+
+     <div class="scroll-item" data-heading="Generated Invoice in App"
+          data-text="The system generates debit notes automatically, including calculated overcharge amounts, supplier details, and invoice references.
+          Each debit note is exported directly as a PDF for official documentation and submission.<br>
+          <span class='notice'>Impact:</span> Streamlines recovery, improves accuracy, and maintains audit-ready records.">
+          <img src="./Images/adebinote.png" alt="Debit Note">
+    </div>
+
+
+      <!-- <div class="scroll-item" data-heading="PDF Version of Debit Note"
+           data-text="Finally, debit notes can be exported as PDFs, ready to print or send via email to suppliers. This closes the loop from data discovery to supplier communication.">
+        <img src="./Images/adebinote.png" alt="Debit Note PDF">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- <div class="next-project hidden">
+        <a href="./hotelops.html">Go to HotelOps →</a>
+  </div> -->
+
+
+  <div class="scroll-item impact">
+        <div class="impact-metrics">
+          <h2>Results & Impact</h2>
+          <div class="metric"><span>120+</span> hours saved per month</div>
+          <div class="metric"><span>₦2,000,000</span> in overcharges recovered</div>
+          <div class="metric"><span>100%</span> accountability in supplier billing</div>
+        </div>
+      </div>
+</section>
+</main>
+
+<footer class="footer">
+    <p>&copy; All Rights Reserved 2026 | Designed by Peace Valari</p>
+</footer>
+
+    <script src="debit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+</body>
+</html>

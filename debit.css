@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background: #0a0a0a;
+    color: #f0f0f0;
+     opacity: 0;
+  transition: opacity 3s ease;
+}
+
+/* Reveal */
+body.fade-in {
+  opacity: 1;
+}
+
+
+/* Side nav */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Parent active highlight */
+.side-nav > ul > li > a.active-parent {
+    color: #ff4081 !important;
+    font-weight: 600 !important;
+}
+
+
+/* Sub-nav indentation */
+.side-nav ul li ul.sub-nav {
+    list-style: none;
+    padding-left: 1.5rem; /* indent */
+    margin-top: 0.5rem;
+}
+
+.side-nav ul li ul.sub-nav li {
+    margin: 0.5rem 0;
+}
+
+.side-nav ul li ul.sub-nav li a {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+/* Accent color highlight for active section */
+.side-nav ul li ul.sub-nav li a.active {
+    color: #ff6f61; /* complementary accent color */
+    font-weight: 600;
+}
+
+.side-nav li {
+    margin: 1rem 0;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.side-nav li.active,
+.side-nav li:hover {
+    color: #ff4081;
+}
+
+.side-nav li a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.side-nav li a:hover {
+    color: #ff4081;
+}
+
+.side-nav li.active {
+    color: #ff4081;
+    pointer-events: none; /* Prevent clicking the current page */
+}
+
+
+
+
+
+/* Headings */
+h1, h2 {
+    margin: 0 0 1rem 0;
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+}
+
+/* Project Overview */
+.project-overview {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.project-overview h2 {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.project-overview p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Metadata list */
+.project-meta {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-meta li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+
+
+.project-description .disclaimer {
+  font-size: 0.9rem;
+  color: #605656 !important; /* subtle informational blue */
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+
+
+
+
+.project-download {
+  margin-top: 1.5rem;
+}
+
+.project-download strong {
+  color: #ff0000; /* strong red */
+}
+
+
+.project-download .download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: #0d0c0c;
+  color: #00ff48;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  box-shadow: inset 3px 3px 6px rgba(0,0,0,0.75),
+              inset -3px -3px 6px rgba(255,255,255,0.07);
+}
+
+.project-download .download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.7),
+              -6px -6px 12px rgba(255,255,255,0.1);
+}
+
+.project-download .download-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.75),
+              inset -2px -2px 5px rgba(255,255,255,0.07);
+}
+
+
+
+
+/* Video styling */
+.app-video {
+    width: 90%;
+    border-radius: 10px;
+    margin: 3rem 0;
+    display: block;
+}
+
+.scroll-item .appy-video {
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    display: block;
+    object-fit: contain;
+  
+}
+
+/* Visit button */
+.visit-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #ff4081;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #ff1f70;
+}
+.visit-btn + .demo-note {
+  display: inline-block;       /* keeps it tied to the button but wraps if needed */
+  margin-left: 0.1rem;
+  font-size: 0.9rem;
+  color: #ff0000;
+  font-weight: 600;
+  vertical-align: middle;      /* aligns vertically with button */
+}
+
+
+
+
+
+
+
+/* Main content */
+main {
+  margin-left: 220px;
+  padding: 2rem;
+}
+.project {
+  margin-bottom: 5rem;
+}
+
+
+
+/* Case Study */
+.project-case-study {
+  margin-top: 4rem;
+}
+
+.sticky-container {
+  padding: 2rem 1rem;
+  display: flex;
+  max-width: 1100px;
+  gap: 3rem; /* more breathing space between text and images */
+  align-items: flex-start;
+}
+
+/* Sticky text panel (desktop) */
+.sticky-explanation {
+  flex: 1 1 50%; /* take ~40% of width */
+  position: sticky;
+  top: 0;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem; /* leave space for case-title */
+  box-sizing: border-box;
+  max-width: 500px; /* prevent text from being too wide */
+}
+
+.sticky-explanation h1 {
+  margin-top: 20%;
+}
+
+.case-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Sticky scroll */
+.sticky-scroll {
+  flex: 1 1 50%; /* take ~60% of width */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  max-width: 700px; /* hard cap image column width */
+  margin-left: 0%;
+}
+
+/* Individual scroll items */
+.scroll-item {
+  min-height: 100vh; /* ensures each image fills viewport space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-item.active {
+  opacity: 1;
+  transform: scale(1.03); /* subtle focus effect */
+}
+
+
+.scroll-item img,
+.scroll-item video {
+  max-height: 70vh; /* consistent image scale */
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5); /* subtle elevation */
+}
+
+/* Ensure heading and paragraph are centered below title */
+.sticky-explanation h2 {
+  text-align: left;
+  max-width: 600px;
+  margin: 1rem 0;   /* top & bottom only */
+  color: #ff1f70;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.sticky-explanation p {
+  font-size: 1rem;
+  line-height: 1.7; /* more readable */
+  color: #ddd;
+  margin-bottom: 2rem;
+  text-align: left;
+  /* text-align: center; */
+  max-width: 600px;
+  /* margin: 0 auto; */
+}
+
+
+.notice {
+  font-weight: 700;          /* makes it bold */
+  color: #ff6f61;            /* soft orange (adjust as desired) */
+  font-size: 1.05rem;        /* slightly larger for emphasis */
+}
+
+
+
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Final Impact Section */
+.scroll-item.impact {
+  background: #0a0a0a; /* clean dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact-metrics {
+  text-align: center;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.impact-metrics h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4081; /* brand highlight */
+  margin-bottom: 2rem;
+}
+
+.impact-metrics .metric {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #eee;
+  margin: 1rem 0;
+}
+
+.impact-metrics .metric span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+}
+
+
+.next-project {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none; /* avoid ghost clicks */
+  transition: opacity 0.5s ease;
+}
+
+.next-project.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.next-project a {
+  background: #ff1f70; /* standout accent */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.next-project a:hover {
+  background: #fff;
+  color: #ff1f70;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem; /* Adjust font size for readability */
+}
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #111;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+
+
+
+
+/* Mobile responsive nav */
+@media (max-width: 767px) {
+
+.menu-toggle-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 65px;          /* matches icon height */
+    background-color: #000;
+    z-index: 2000;          /* below icon */
+  }
+
+  /* Menu icon above the black bar */
+  .menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top:1rem; 
+    left: 15px;
+    font-size: 6vw;
+    padding: 0.2em 0.4em;
+   z-index: 3000;      /* higher than bar so icon appears on top */
+    display: block;
+  }
+
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hidden off-screen */
+    width: 250px;
+    height: 100vh;
+    background: #111;
+    transition: left 0.3s ease;
+    /* z-index: 1200; */
+    z-index: 2000; 
+    padding-top: 3rem;
+  }
+
+  .side-nav.open {
+    left: 0;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  
+  .side-nav ul li {
+    margin: 1rem 0;
+  }
+
+  .sticky-explanation {
+    display: none; 
+  }
+
+  /* ensure normal document flow and stacking */
+  .sticky-container { display: block; }
+  .sticky-scroll { display: block; }
+
+  .scroll-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.375rem;
+    padding: 0.5rem 0;
+    position: relative; /* neutralize absolute children */
+  }
+
+  .scroll-item .mobile-heading {
+  margin: 0.75rem 0 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #ff1f70;
+  font-size: clamp(1.4rem, 5vw, 1.9rem); /* scales nicely on phones */
+  line-height: 1.3;
+}
+
+  .scroll-item .mobile-text {
+    margin: 0 0 0.75rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #666; /* adjust if background is dark */
+    font-size: 0.95rem;
+  }
+
+  /* force images/videos into the normal flow (important if other CSS used absolute) */
+  .scroll-item img,
+  .scroll-item video {
+    position: static !important;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: contain;
+  }
+
+  .sticky-explanation h1,
+  .sticky-explanation h2,
+  .sticky-explanation p {
+    text-align: center;
+  }
+
+  .sticky-scroll {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .notice {
+  font-weight: 700;          /* makes it bold */
+  color: #ff6f61;            /* soft orange (adjust as desired) */
+  font-size: 1.05rem;        /* slightly larger for emphasis */
+}
+
+.project-description .disclaimer {
+  color: #605656 !important; 
+}
+
+.sticky-explanation .case-title {
+  font-size: clamp(1.6rem, 6vw, 2rem);
+  font-weight: 700;
+  color: #ff1f70; /* visible pink accent matching headings */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+    .next-project {
+    bottom: 3rem;
+    right: 1rem;
+  }
+
+  .next-project a {
+    font-size: clamp(0.75rem, 3vw, 1rem);
+    padding: 0.7em 1em;
+    border-radius: 999px;
+  }
+
+ .footer {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically within padding */
+    padding: 8px;            /* balanced, no side-offset */
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem); /* scales with screen */
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .scroll-item .mobile-text {
+    color: #fff;       /* white */
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+@media (max-height: 450px) {
+
+
+.case-title {
+  font-size: clamp(1.6rem, 6vw, 1.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-top: -5rem !important;
+}
+
+.impact-metrics .metric {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #eee;
+  margin: 1rem 0;
+}
+
+}
+
