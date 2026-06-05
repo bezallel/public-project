@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="debit.css">
+    <title>Fraud Detection Case Study</title>
+</head>
+<body>
+<div class="menu-toggle-bar"></div> 
+<button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+     <nav class="side-nav">
+    <ul>
+        <li class="active">
+        <a href="fraud.html">Fraud Detection</a>
+        <ul class="sub-nav">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#case-study">Case Study</a></li>
+      </ul>
+      </li>
+        <!-- <li><a href="hotelops.html">Hotel Ops</a></li>
+        <li><a href="murami.html">Murami</a></li>
+        <li><a href="esg.html">ESG/INT TRADE</a></li>
+        <li><a href="allpyth.html">Python/SQL Notebooks</a></li> -->
+        <!-- <li><a href="project4.html">Super Store</a></li> -->
+    </ul>
+</nav>
+
+
+<main>
+ 
+ <section id="overview" class="project-overview">
+  <h2>Vendor Debit Note Automation</h2>
+
+  <ul class="project-meta">
+    <li><strong>Category:</strong> Financial Controls / Accounts Payable Automation</li>
+    <li><strong>Technical Skills:</strong> Excel modeling,  Python</li>
+  </ul>
+
+  <div class="project-description">
+    <p><strong>Overview:</strong> Designed and deployed an end-to-end AML transaction monitoring system that detects potentially fraudulent financial activity using machine learning trained on the PaySim dataset. The system analyzes transaction behavior, account balance changes, and transfer patterns to generate real-time fraud risk scores, classify financial crime typologies, and support investigation workflows.</p>
+    <p><strong>Impact:</strong> Delivered a working prototype of a transaction monitoring system capable of automated fraud detection, risk scoring, and structured investigative outputs including SAR-style reporting for compliance review workflows.</p>
+
+
+    <p class="disclaimer"><em>Disclaimer:</em> This project is a creative implementation inspired by real-world AML transaction monitoring systems used in financial institutions. It is designed for educational and demonstration purposes.</p>
+  </div>
+
+    <video autoplay muted loop class="app-video">
+      <source src="./Videos/fraudsense.mp4" type="video/mp4">
+    </video>
+
+    <div class="visit-btn-wrap">
+  <a href="https://fraudsense-s92v.onrender.com/" target="_blank" class="visit-btn">
+  View live demo
+  </a>
+</div>
+
+
+
+<section id="case-study" class="project-case-study">
+    <div class="sticky-container">
+    <!-- Sticky text panel -->
+    <div class="sticky-explanation">
+      <h1 class="case-title">Project Case Study:</h1>
+      <h2 id="case-heading" class="fade show"></h2>
+      <p id="case-text" class="fade show"></p>
+    </div>
+
+
+    <div class="sticky-scroll">
+      <div class="scroll-item" data-heading="Problem"
+           data-text="Financial institutions process millions of transactions daily, making it difficult to manually detect fraudulent activity in real time. <br>
+            <span class='notice'>Objective:</span> Build an automated system that identifies suspicious transactions, assigns risk scores, classifies fraud types, and supports AML investigation workflows.">
+        <img src="./image/overload.jpeg" alt="Dataset discrepancies">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 1: Transaction Risk Scoring"
+           data-text="The system evaluates transaction patterns including amount, account balances, and transfer behavior to generate a fraud probability score between 0 and 1.">
+        <img src="./image/scoring.jpg" alt="Dataset discrepancies">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 2: Fraud Typology Detection"
+           data-text="The model identifies financial crime patterns such as Account Takeover, Layering via mule accounts, and illicit cash-out behavior based on transaction structure and balance movement.">
+        <img src="./image/detection.jpg" alt="Leakage vs Savings">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 3: Explainable AI Insights (XAI)"
+           data-text="The system generates explainable AI insights that decompose each prediction into contributing factors, showing how individual features (e.g., transaction velocity, balance deviations, and network relationships) positively or negatively influence the final fraud score.">
+        <!-- <img src="./Images/adebi1.png" alt="App Homepage"> -->
+         <img src="./image/xai.png" alt="Dataset Upload">
+      </div>
+
+      <div class="scroll-item" data-heading="Step 4: AML Investigation Output"
+           data-text="The system generates structured investigation summaries similar to AML alert reviews, including fraud score, risk level, and escalation rationale.">
+        <img src="./image/sar.png" alt="Dataset Upload">
+      </div>
+
+    </div>
+
+
+      <!-- <div class="scroll-item" data-heading="PDF Version of Debit Note"
+           data-text="Finally, debit notes can be exported as PDFs, ready to print or send via email to suppliers. This closes the loop from data discovery to supplier communication.">
+        <img src="./Images/adebinote.png" alt="Debit Note PDF">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- <div class="next-project hidden">
+        <a href="./hotelops.html">Go to HotelOps →</a>
+  </div> -->
+
+
+  <div class="scroll-item impact">
+        <div class="impact-metrics">
+          <h2>Results & Impact</h2>
+          <div class="metric"><span>0.99+</span> Model AUC performance</div>
+          <div class="metric"><span>Detection</span> Financial crime typologies detected</div>
+          <div class="metric"><span>SAR-ready</span> Investigative outputs generated</div>
+        </div>
+      </div>
+</section>
+</main>
+
+<footer class="footer">
+    <p>&copy; All Rights Reserved 2026 | Designed by Peace Valari</p>
+</footer>
+
+    <script src="debit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+</body>
+</html>
