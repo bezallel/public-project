@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="debit.css">
-    <title>Debit Note Case Study</title>
+    <title>Financial Controls & Reconciliation System<</title>
 </head>
 <body>
 <div class="menu-toggle-bar"></div> 
@@ -12,7 +12,7 @@
      <nav class="side-nav">
     <ul>
         <li class="active">
-        <a href="debit.html">Debit Note</a>
+        <a href="debit.html">Financial Controls System</a>
         <ul class="sub-nav">
         <li><a href="#overview">Overview</a></li>
         <li><a href="#case-study">Case Study</a></li>
@@ -33,13 +33,13 @@
   <h2>Vendor Debit Note Automation</h2>
 
   <ul class="project-meta">
-    <li><strong>Category:</strong> Supply chain / operations</li>
-    <li><strong>Technical Skills:</strong> Excel modeling, HTML/CSS/JS, automation, PDF generation</li>
+    <li><strong>Category:</strong> Financial Controls & Reconciliation Automation System</li>
+    <li><strong>Technical Skills:</strong> Excel processing, JavaScript automation, data reconciliation, PDF generation</li>
   </ul>
 
   <div class="project-description">
-    <p><strong>Overview:</strong> Designed and deployed a financial controls automation system that processes structured reconciliation workbooks, identifies supplier billing discrepancies, calculates overcharge and undercharge adjustments, extracts predefined discrepancy categories (including VAT variances and quantity mismatches), and automatically generates audit-ready debit notes in PDF format. The solution streamlined reconciliation workflows, reduced manual processing effort, and standardized debit note creation for supplier recovery processes.</p>
-    <p><strong>Impact:</strong> Reduced reconciliation errors and delivered measurable financial impact, including revenue savings of <strong>over 20%</strong> and saving 120+ hours per month in procurement operations.</p>
+    <p><strong>Overview:</strong> Designed and implemented a financial controls automation system that processes structured vendor invoice and purchase order data to detect billing discrepancies, enforce contractual compliance, and automate financial recovery workflows. The system reconciles invoice line items against agreed purchase terms, identifies overbilling and underbilling events, and generates structured audit-ready debit notes for review and supplier recovery processes.</p>
+    <p><strong>Impact:</strong> Improved financial control accuracy by automating reconciliation workflows, reducing manual processing effort, and enabling faster identification and recovery of supplier overcharges, resulting in significant operational efficiency gains and measurable cost savings</p>
 
 
     <p class="disclaimer"><em>Disclaimer:</em> This project is a creative recreation of the actual system i built and is used at <strong>Triple E Medical</strong>. All names and data are used with permission and may be adapted for demonstration purposes.</p>
@@ -76,20 +76,18 @@
 
     <div class="sticky-scroll">
       <div class="scroll-item" data-heading="Problem"
-           data-text="Discrepancies between planned orders, received quantities, and invoiced amounts led to supplier overcharging, missed recoveries, and labor-intensive manual reconciliation. <br>
-            <span class='notice'>Objective:</span> Develop a system to automatically detect overcharging, calculate debit amounts, generate debit notes, and provide analytics on savings, leakage, and supplier performance.">
+           data-text="Vendor invoice processing often involves discrepancies between purchase orders, received goods, and billed amounts. These inconsistencies lead to financial leakage, delayed recoveries, and high manual reconciliation effort. <br>
+            <span class='notice'>Objective:</span> Build a system that automatically detects invoice discrepancies, calculates financial adjustments, and generates structured debit notes for audit and recovery workflows.">
         <img src="./Images/moneyleak.jpg" alt="Dataset discrepancies">
       </div>
 
-      <div class="scroll-item" data-heading="Step 1: Inventory Analysis"
-           data-text="Compares planned units (green), invoiced units, and received units.
-            Discrepancies where invoiced amounts exceed planned or received quantities are flagged in red.">
+      <div class="scroll-item" data-heading="Step 1: Reconciliation Engine"
+           data-text="The system compares purchase orders, received quantities, and vendor invoices to identify mismatches in pricing, VAT application, and quantity variations. Exceptions are flagged for review based on deviation thresholds.">
         <img src="./Images/adatashot.png" alt="Dataset discrepancies">
       </div>
 
-      <div class="scroll-item" data-heading="Step 2: Analytics and Insights"
-           data-text="Total Leakage vs Total Savings: Overcharged amounts vs recovered amounts; savings exceed leakage.
-          Supplier Performance: Highlights habitual defaulters by comparing leakage vs savings per supplier.">
+      <div class="scroll-item" data-heading="Step 2: Financial Leakage & Recovery Analytics"
+           data-text="The system quantifies overbilling and underbilling across vendors, enabling identification of high-risk suppliers and tracking recoverable financial leakage over time.">
         <img src="./Images/aaatotasup.png" alt="Leakage vs Savings">
       </div>
 
@@ -102,15 +100,13 @@
          </video>
       </div>
 
-      <div class="scroll-item" data-heading="Step 4: Automated Debit Note Generation"
-           data-text="Generates debit notes automatically, including overcharge amounts, supplier details, and invoice references.
-          Supports PDF export for professional documentation.">
+      <div class="scroll-item" data-heading="Step 4: Automation Interface"
+           data-text="A web-based interface enables structured reconciliation uploads, automated processing, and standardized exception reporting. This reduces reliance on manual spreadsheet reviews and improves consistency in financial control processes.">
         <img src="./Images/adebi3.png" alt="Dataset Upload">
       </div>
 
-     <div class="scroll-item" data-heading="Generated Invoice in App"
-          data-text="The system generates debit notes automatically, including calculated overcharge amounts, supplier details, and invoice references.
-          Each debit note is exported directly as a PDF for official documentation and submission.<br>
+     <div class="scroll-item" data-heading="Debit Generation"
+          data-text="The system generates audit-ready PDF debit notes with vendor details, invoice references, and calculated adjustments. Each output is standardized for review, recovery, and audit documentation, ensuring traceability and compliance across reconciliation cycles.<br>
           <span class='notice'>Impact:</span> Streamlines recovery, improves accuracy, and maintains audit-ready records.">
           <img src="./Images/adebinote.png" alt="Debit Note">
     </div>
@@ -131,9 +127,9 @@
   <div class="scroll-item impact">
         <div class="impact-metrics">
           <h2>Results & Impact</h2>
-          <div class="metric"><span>120+</span> hours saved per month</div>
-          <div class="metric"><span>₦2,000,000</span> in overcharges recovered</div>
-          <div class="metric"><span>100%</span> accountability in supplier billing</div>
+          <div class="metric"><span>120+</span> hours of manual reconciliation eliminated monthly</div>
+        <div class="metric"><span>₦2,000,000+</span> identified and recovered financial leakage</div>
+        <div class="metric"><span>Standardized</span> audit-ready debit note generation workflow</div>
         </div>
       </div>
 </section>
